@@ -4,6 +4,8 @@
 
 没有读取原仿真的模型、物性、控制器或运行数据。熊、衣片与场景由代码生成；机器人使用 Genesis 上游 Panda 资产。
 
+[四张原始输入图片](inputs/initial_images/README.md)按原始字节保存在 `inputs/initial_images/`，与下方展示的重建结果分开；原始文件名及校验值见 [input_provenance.json](input_provenance.json)。
+
 ![最终布料形态](outputs/final/final_close.png)
 
 [完整演示视频](outputs/final/simulation.mp4) · [袖口与背部细节](outputs/final/details.mp4) · [详细建模与运行说明](README_zh.md)
