@@ -1,0 +1,15 @@
+{
+  "backend": "gpu",
+  "viewer": false,
+  "duration": 31.0,
+  "render_every": 2,
+  "sample_every": 1,
+  "detail_video": true,
+  "output": "outputs/final",
+  "no_video": false,
+  "particle_size": 0.008,
+  "substeps": 12,
+  "stretch_iterations": 120,
+  "stretch_relaxation": 0.1,
+  "contact_iterations": 8
+}

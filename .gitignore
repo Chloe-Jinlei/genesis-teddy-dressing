@@ -1,0 +1,17 @@
+cache/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.log
+
+# Keep the documented demonstration, not generated experiments or new runs.
+outputs/*
+!outputs/final/
+# The complete state archive is distributed as a GitHub Release asset.
+outputs/final/trajectory.npz
+/smoke.py
+.publish/

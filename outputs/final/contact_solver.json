@@ -1,0 +1,20 @@
+{
+  "adapter": "local interleaved native PBD and fixed-rigid contact",
+  "genesis_version": "1.4.3",
+  "outer_contact_iterations": 8,
+  "requested_total_stretch_iterations": 120,
+  "native_stretch_iterations_per_outer": 15,
+  "actual_total_stretch_iterations": 120,
+  "native_bending_iterations_per_substep": 3,
+  "bending_schedule": "once after first stretch group; original total iterations retained",
+  "prediction_integrations_per_substep": 1,
+  "final_velocity_reconstructions_per_substep": 1,
+  "collision_underrelaxation": null,
+  "collision_diameter_m": 0.008,
+  "all_coupled_rigid_geometry_must_be_fixed": true,
+  "limitations": [
+    "private Genesis interfaces; forward simulation only",
+    "native contact reactions on fixed obstacles are not calibrated force outputs",
+    "no claim of converged stretch/contact or cloth self-intersection freedom"
+  ]
+}

@@ -1,0 +1,634 @@
+{
+  "schema_version": 1,
+  "task_success": true,
+  "interpretation": "All checks concern the inferred surrogate and actual saved Genesis solver state. Original parameters/motion are not observable from four initial images.",
+  "numerical_finiteness": {
+    "passed": true,
+    "trajectory_shape": [
+      1551,
+      2440,
+      3
+    ],
+    "finite_particles": true,
+    "valid_faces": true
+  },
+  "uncertainty_policy": "Unavailable, uncertain or failing required checks fail the overall task gate.",
+  "topology": {
+    "vertices": 2440,
+    "faces": 4558,
+    "edges": 6999,
+    "boundary_loops": 3,
+    "interior_holes": 2,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "regular_boundary": true,
+    "all_vertices_used": true,
+    "hole_vertex_indices": [
+      [
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        166,
+        223,
+        224,
+        298,
+        321,
+        388,
+        417,
+        481,
+        505,
+        504,
+        571,
+        604,
+        603,
+        602,
+        601,
+        600,
+        599,
+        598,
+        597,
+        570,
+        569,
+        503,
+        480,
+        416,
+        387,
+        320,
+        297,
+        222,
+        164,
+        165
+      ],
+      [
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        391,
+        392,
+        459,
+        483,
+        547,
+        573,
+        648,
+        673,
+        742,
+        772,
+        771,
+        844,
+        843,
+        842,
+        841,
+        840,
+        839,
+        838,
+        837,
+        770,
+        741,
+        740,
+        672,
+        647,
+        572,
+        546,
+        482,
+        457,
+        458,
+        390
+      ]
+    ],
+    "hole_rest_centers": [
+      [
+        -0.20442105123871251,
+        -0.32499999984314565,
+        0.7580000162124634
+      ],
+      [
+        0.20442105123871251,
+        -0.2950000010038677,
+        0.7580000162124634
+      ]
+    ],
+    "passed": true
+  },
+  "edge_stretch": {
+    "passed": true,
+    "maximum_edge_length_ratio": 1.4863583500138728,
+    "p99_edge_length_ratio": 1.0983103657247832,
+    "final_p99_edge_length_ratio": 1.1040038730283572,
+    "minimum_edge_length_ratio": 0.4710793436307813,
+    "thresholds": {
+      "maximum_ratio": 1.5,
+      "p99_ratio": 1.2
+    },
+    "note": "Original triangle edges only; excludes newly added adhesion constraints. Thresholds are explicit engineering priors, not measured textile limits."
+  },
+  "sleeve_threading": {
+    "passed": true,
+    "arms": {
+      "left": {
+        "initial": {
+          "threaded_proxy": false,
+          "geometry_certain": true,
+          "ring_plane_max_deviation_m": 0.0,
+          "ring_projection_simple": true,
+          "proximal_distal_opposite_sides": false,
+          "endpoint_plane_distances_m": [
+            0.21283082934751185,
+            0.15718128108714935
+          ],
+          "centerline_crossings": [],
+          "crossings_within_actual_arm_solid": false,
+          "crossing_arm_ellipsoid_normalized_radius": []
+        },
+        "final": {
+          "threaded_proxy": true,
+          "geometry_certain": true,
+          "ring_plane_max_deviation_m": 0.004001474133016703,
+          "ring_projection_simple": true,
+          "proximal_distal_opposite_sides": true,
+          "endpoint_plane_distances_m": [
+            -0.06384429372010184,
+            0.04261775149865883
+          ],
+          "centerline_crossings": [
+            {
+              "segment": 0,
+              "parameter": 0.8238887850519715,
+              "point": [
+                -0.11125903399620937,
+                0.0654772750408045,
+                1.0068863243063235
+              ],
+              "projected_ring_clearance_m": 0.032978864776305065
+            }
+          ],
+          "crossings_within_actual_arm_solid": true,
+          "crossing_arm_ellipsoid_normalized_radius": [
+            0.46013270344725965
+          ]
+        },
+        "first_detected_time_s": 7.28,
+        "threading_intervals_s": [
+          [
+            7.28,
+            7.48
+          ],
+          [
+            7.5600000000000005,
+            31.0
+          ]
+        ],
+        "last_second_threaded_fraction": 1.0,
+        "passed": true
+      },
+      "right": {
+        "initial": {
+          "threaded_proxy": false,
+          "geometry_certain": true,
+          "ring_plane_max_deviation_m": 0.0,
+          "ring_projection_simple": true,
+          "proximal_distal_opposite_sides": false,
+          "endpoint_plane_distances_m": [
+            0.21283082934751185,
+            0.15718128108714935
+          ],
+          "centerline_crossings": [],
+          "crossings_within_actual_arm_solid": false,
+          "crossing_arm_ellipsoid_normalized_radius": []
+        },
+        "final": {
+          "threaded_proxy": true,
+          "geometry_certain": true,
+          "ring_plane_max_deviation_m": 0.00511985730477099,
+          "ring_projection_simple": true,
+          "proximal_distal_opposite_sides": true,
+          "endpoint_plane_distances_m": [
+            -0.06463273399879316,
+            0.04106903329827179
+          ],
+          "centerline_crossings": [
+            {
+              "segment": 0,
+              "parameter": 0.8406958109422142,
+              "point": [
+                0.11237952322604294,
+                0.06543172669812834,
+                1.0076606461318183
+              ],
+              "projected_ring_clearance_m": 0.0320839484048732
+            }
+          ],
+          "crossings_within_actual_arm_solid": true,
+          "crossing_arm_ellipsoid_normalized_radius": [
+            0.4162203253396656
+          ]
+        },
+        "first_detected_time_s": 7.48,
+        "threading_intervals_s": [
+          [
+            7.48,
+            31.0
+          ]
+        ],
+        "last_second_threaded_fraction": 1.0,
+        "passed": true
+      }
+    },
+    "centerline_audit": {
+      "source": "Re-derived from saved actual component geometry; stored arm_centerlines never drives the check.",
+      "centerlines": {
+        "left": [
+          [
+            -0.05633209354523242,
+            0.06771007749816128,
+            0.9689286825312582
+          ],
+          [
+            -0.123,
+            0.065,
+            1.015
+          ],
+          [
+            -0.145,
+            0.055,
+            0.994
+          ],
+          [
+            -0.166,
+            0.042,
+            0.964
+          ],
+          [
+            -0.175,
+            0.035,
+            0.941
+          ],
+          [
+            -0.1858472952853016,
+            0.026563214778098723,
+            0.9132791342708957
+          ]
+        ],
+        "right": [
+          [
+            0.05633209354523242,
+            0.06771007749816128,
+            0.9689286825312582
+          ],
+          [
+            0.123,
+            0.065,
+            1.015
+          ],
+          [
+            0.145,
+            0.055,
+            0.994
+          ],
+          [
+            0.166,
+            0.042,
+            0.964
+          ],
+          [
+            0.175,
+            0.035,
+            0.941
+          ],
+          [
+            0.1858472952853016,
+            0.026563214778098723,
+            0.9132791342708957
+          ]
+        ]
+      },
+      "stored_centerlines_replaced": false,
+      "stored_component_center_max_error_m": 0.0,
+      "endpoint_method": "Proximal point at <=0.5 torso ellipsoid normalized radius, through shoulder/upper arm/forearm/paw centers, ending 5 mm beyond paw surface along the forearm-to-paw direction.",
+      "internal_curve_within_solid_union": {
+        "left": true,
+        "right": true
+      }
+    },
+    "simultaneous_threading_intervals_s": [
+      [
+        7.48,
+        7.48
+      ],
+      [
+        7.5600000000000005,
+        31.0
+      ]
+    ],
+    "simultaneous_threading_saved_frame_count": 1174,
+    "method": "Actual boundary loop plane/polygon crossed exactly once by actual-component arm centerline extended from torso interior to beyond paw, with endpoints on opposite sides. Intersection must lie inside an actual shoulder/arm/paw solid, not just the artificial extension. Plane error <=12 mm and intersection margin >=3 mm.",
+    "limitation": "Projected disk and reconstructed fixed arm centerline are proxies. Sampled frames do not certify continuous threading or contact-free insertion."
+  },
+  "collision_proxy": {
+    "passed": true,
+    "max_penetration_proxy_m": 0.0,
+    "worst_saved_frame": 0,
+    "final_max_penetration_proxy_m": 0.0,
+    "final_sample_component_pairs_deeper_than_6mm": 0,
+    "table_max_vertex_penetration_m": 0.0,
+    "components": {
+      "torso": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      },
+      "head": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      },
+      "left_ear": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      },
+      "left_foot": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      },
+      "left_shoulder": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      },
+      "left_upper_arm": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      },
+      "left_forearm": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      },
+      "left_paw": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      },
+      "right_ear": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      },
+      "right_foot": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      },
+      "right_shoulder": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      },
+      "right_upper_arm": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      },
+      "right_forearm": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      },
+      "right_paw": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      },
+      "belly_patch": {
+        "max_penetration_proxy_m": 0.0,
+        "final_max_penetration_proxy_m": 0.0
+      }
+    },
+    "thresholds_m": {
+      "all_frames_bear": 0.01,
+      "final_bear": 0.006,
+      "table": 0.006
+    },
+    "method": "All saved frames, actual vertices, triangle centroids and edge midpoints, against the union of manifest collision ellipsoids.",
+    "limitation": "Discrete analytical proxy, not exact Genesis mesh/SDF clearance or exhaustive triangle contact. Does not test cloth self-intersection or robot collision."
+  },
+  "torso_wrap": {
+    "passed": true,
+    "closed_projection_winding_approx": 1.0,
+    "material_path_endpoint_gap_m": 0.010409309072812687,
+    "material_path_rest_y": -0.25374999649999996,
+    "material_path_inset_from_lower_hem_m": 0.11625000826837162,
+    "material_path_selection": "Evaluate every full-width open boundary-Y band midpoint and require at least one actual material loop with winding, endpoint gap and belly-height criteria. Any material gap >1 micrometer rejects a row. No virtual caps are used for paths; no assumption that minimum rest Y is world-bottom. The displayed passing candidate is nearest torso-center height.",
+    "material_path_candidates": [
+      {
+        "rest_y": -0.3662500085,
+        "inset_from_minimum_rest_y_m": 0.0037499962683715804,
+        "winding": 1.0,
+        "endpoint_gap_m": 0.026306477237087053,
+        "height_range_m": [
+          1.0012282228503193,
+          1.0573822954892727
+        ],
+        "mean_height_m": 1.0285281494971024,
+        "belly_height_fraction": 0.8627450980392157,
+        "passed": false
+      },
+      {
+        "rest_y": -0.25374999649999996,
+        "inset_from_minimum_rest_y_m": 0.11625000826837162,
+        "winding": 1.0,
+        "endpoint_gap_m": 0.010409309072812687,
+        "height_range_m": [
+          0.8948349800533344,
+          0.9472456451724555
+        ],
+        "mean_height_m": 0.9197927700401488,
+        "belly_height_fraction": 1.0,
+        "passed": true
+      },
+      {
+        "rest_y": -0.24625000349999998,
+        "inset_from_minimum_rest_y_m": 0.1237500012683716,
+        "winding": 1.0000000000000002,
+        "endpoint_gap_m": 0.009204582402922445,
+        "height_range_m": [
+          0.8874325045312065,
+          0.9398286134526913
+        ],
+        "mean_height_m": 0.9126564243871625,
+        "belly_height_fraction": 1.0,
+        "passed": true
+      },
+      {
+        "rest_y": -0.238750003,
+        "inset_from_minimum_rest_y_m": 0.1312500017683716,
+        "winding": 1.0,
+        "endpoint_gap_m": 0.008074036896265296,
+        "height_range_m": [
+          0.8800800382642074,
+          0.9323897227435668
+        ],
+        "mean_height_m": 0.905153507539145,
+        "belly_height_fraction": 1.0,
+        "passed": true
+      },
+      {
+        "rest_y": -0.23125000299999998,
+        "inset_from_minimum_rest_y_m": 0.1387500017683716,
+        "winding": 1.0,
+        "endpoint_gap_m": 0.007993056103932854,
+        "height_range_m": [
+          0.8727530021008336,
+          0.9249861502374114
+        ],
+        "mean_height_m": 0.898047459487266,
+        "belly_height_fraction": 1.0,
+        "passed": true
+      },
+      {
+        "rest_y": -0.223750003,
+        "inset_from_minimum_rest_y_m": 0.14625000176837158,
+        "winding": 1.0,
+        "endpoint_gap_m": 0.00800574454205761,
+        "height_range_m": [
+          0.8655365804060877,
+          0.9176572597970556
+        ],
+        "mean_height_m": 0.8908107087452422,
+        "belly_height_fraction": 1.0,
+        "passed": true
+      },
+      {
+        "rest_y": -0.21625000249999998,
+        "inset_from_minimum_rest_y_m": 0.1537500022683716,
+        "winding": 1.0,
+        "endpoint_gap_m": 0.009726187983507462,
+        "height_range_m": [
+          0.8584661096711723,
+          0.9104314970710385
+        ],
+        "mean_height_m": 0.8834934899219382,
+        "belly_height_fraction": 1.0,
+        "passed": true
+      },
+      {
+        "rest_y": -0.208750002,
+        "inset_from_minimum_rest_y_m": 0.1612500027683716,
+        "winding": 1.0,
+        "endpoint_gap_m": 0.011043108677329418,
+        "height_range_m": [
+          0.8515308355314946,
+          0.9032683617515042
+        ],
+        "mean_height_m": 0.876215291611568,
+        "belly_height_fraction": 1.0,
+        "passed": true
+      },
+      {
+        "rest_y": -0.2012500015,
+        "inset_from_minimum_rest_y_m": 0.16875000326837158,
+        "winding": 1.0000000000000002,
+        "endpoint_gap_m": 0.009520473676572728,
+        "height_range_m": [
+          0.8447831408572868,
+          0.8961102954504584
+        ],
+        "mean_height_m": 0.8690294819682194,
+        "belly_height_fraction": 1.0,
+        "passed": true
+      },
+      {
+        "rest_y": -0.1937500015,
+        "inset_from_minimum_rest_y_m": 0.1762500032683716,
+        "winding": 1.0,
+        "endpoint_gap_m": 0.009245069802641887,
+        "height_range_m": [
+          0.8381497701397896,
+          0.8889492999856967
+        ],
+        "mean_height_m": 0.8616367883328896,
+        "belly_height_fraction": 1.0,
+        "passed": true
+      }
+    ],
+    "material_path_candidate_count": 10,
+    "material_path_passing_count": 9,
+    "material_path_height_range_m": [
+      0.8948349800533344,
+      0.9472456451724555
+    ],
+    "material_path_belly_height_compatible": true,
+    "torso_cross_section_z_m": [
+      0.905,
+      0.93,
+      0.9550000000000001
+    ],
+    "torso_angular_coverage_fraction": [
+      1.0,
+      1.0,
+      0.8166666666666667
+    ],
+    "garment_envelope_angular_coverage_fraction": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "angular_fraction_added_only_by_true_hole_caps": [
+      0.0,
+      0.0,
+      0.18333333333333332
+    ],
+    "hole_caps_valid": true,
+    "hole_cap_triangle_counts": [
+      36,
+      36
+    ],
+    "both_actual_holes_threaded_at_final_state": true,
+    "envelope_used_for_wrap_gate": true,
+    "hole_envelope_method": "Virtually cap only the two actual sleeve boundary loops by ear-clipped triangles; same height/radius filters and 85% threshold. Count their missing angular bins only when both actual hole/arm crossings are confirmed. Caps are analytical only, never added to the solver.",
+    "thresholds": {
+      "minimum_each_level_coverage": 0.85,
+      "maximum_path_endpoint_gap_m": 0.04,
+      "absolute_winding_target": 1
+    },
+    "limitation": "Uses actual mesh/segments and optional true-hole virtual caps. XY projected winding and angular coverage are approximations; they do not establish a topological enclosure in 3D. Sleeve caps describe garment extent, not cloth covering the arm apertures."
+  },
+  "seam_free_hold": {
+    "passed": true,
+    "grasp_release_logged": true,
+    "release_time_s": 14.0,
+    "all_logged_release_times_s": [
+      14.0
+    ],
+    "model": "Permanent compliant surrogate seam, not calibrated Velcro; no breakage law.",
+    "free_hold_duration_s": 17.0,
+    "final_hold_uninterrupted_without_grasp": true,
+    "final_release_confirmed_in_metrics": true,
+    "minimum_active_bonds_during_free_hold": 67,
+    "activation_ledger_consistent": true,
+    "solver_dt_s": 0.02,
+    "active_pair_count": 81,
+    "release_active_pair_count": 67,
+    "release_active_bonds_tracked_every_free_hold_frame": true,
+    "max_release_active_pair_gap_during_free_hold_m": 0.013711392992246845,
+    "unactivated_excluded_distinct_pair_count": 14,
+    "unactivated_excluded_pair_frame_count": 3570,
+    "max_active_pair_gap_during_free_hold_m": 0.013711392992246845,
+    "final_active_pair_gap_p95_m": 0.011356287964054709,
+    "cloth_center_drop_during_free_hold_m": 0.007441369431917755,
+    "activation_time_method": "A pair is evaluated only when event.step <= saved control time / saved solver_dt_s. Saved positions are post-step states; every bond active at release remains evaluated in every subsequent frame, and later bonds enter at activation.",
+    "thresholds_m": {
+      "maximum_active_gap_during_free_hold": 0.04,
+      "final_active_gap_p95": 0.025
+    },
+    "limitation": "Survival only for the modeled permanent seam and tested duration, without an applied peel/load challenge. Not-yet-activated candidate pairs are not bonds and are excluded until their recorded activation."
+  },
+  "failed_checks": [],
+  "status": "surrogate_checks_passed",
+  "not_certified": [
+    "original simulation equivalence",
+    "continuous-time collision freedom",
+    "cloth self-intersection freedom",
+    "robot collision avoidance or force feasibility",
+    "real hook-and-loop strength",
+    "material identification"
+  ]
+}

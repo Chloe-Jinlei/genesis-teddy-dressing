@@ -1,0 +1,8 @@
+newmtl garment_textured
+Ka 0.08 0.08 0.08
+Kd 1.000000 1.000000 1.000000
+Ks 0.015 0.015 0.015
+Ns 4
+d 1.00000
+illum 2
+map_Kd garment_texture.png

@@ -1,0 +1,2170 @@
+{
+  "schema_version": 1,
+  "provenance": "Procedural reconstruction from four supplied initial-state images and the user task description only.",
+  "not_identified_from_images": [
+    "absolute scale",
+    "camera calibration",
+    "mass",
+    "cloth elasticity",
+    "bending stiffness",
+    "friction",
+    "contact compliance",
+    "Velcro strength",
+    "original motion and controller"
+  ],
+  "coordinate_system": {
+    "units": "meters",
+    "up": "+Z",
+    "bear_front": "-Y",
+    "bear_left_right": "X"
+  },
+  "table": {
+    "size": [
+      1.4,
+      0.95,
+      0.045
+    ],
+    "top_z": 0.75,
+    "position": [
+      0,
+      0,
+      0.7275
+    ],
+    "color": [
+      0.57,
+      0.4,
+      0.25,
+      1
+    ]
+  },
+  "bear": {
+    "position_reference": [
+      0,
+      0.07,
+      0.75
+    ],
+    "nominal_height_m": 0.44,
+    "actual_ear_top_height_m": 0.455,
+    "visual_mesh": "bear_visual.obj",
+    "vertex_color_visual_mesh": "bear_visual.ply",
+    "collision_mesh": "bear_collision.obj",
+    "mesh_coordinates": "world",
+    "components": [
+      {
+        "name": "torso",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0,
+          0.07,
+          0.93
+        ],
+        "scale": [
+          0.132,
+          0.1,
+          0.15
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.43,
+          0.245,
+          0.115,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0,
+            0.07,
+            0.93
+          ],
+          "radii": [
+            0.132,
+            0.1,
+            0.15
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "head",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0,
+          0.055,
+          1.095
+        ],
+        "scale": [
+          0.111,
+          0.095,
+          0.095
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.48,
+          0.285,
+          0.145,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0,
+            0.055,
+            1.095
+          ],
+          "radii": [
+            0.111,
+            0.095,
+            0.095
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "left_ear",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          -0.084,
+          0.059,
+          1.166
+        ],
+        "scale": [
+          0.037,
+          0.029,
+          0.039
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.48,
+          0.285,
+          0.145,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            -0.084,
+            0.059,
+            1.166
+          ],
+          "radii": [
+            0.037,
+            0.029,
+            0.039
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "left_inner_ear",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          -0.084,
+          0.035,
+          1.166
+        ],
+        "scale": [
+          0.024,
+          0.009,
+          0.025
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.66,
+          0.57,
+          0.38,
+          1.0
+        ],
+        "collision": false,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            -0.084,
+            0.035,
+            1.166
+          ],
+          "radii": [
+            0.024,
+            0.009,
+            0.025
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "left_foot",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          -0.059,
+          0.027,
+          0.78
+        ],
+        "scale": [
+          0.047,
+          0.063,
+          0.03
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.48,
+          0.285,
+          0.145,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            -0.059,
+            0.027,
+            0.78
+          ],
+          "radii": [
+            0.047,
+            0.063,
+            0.03
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "left_shoulder",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          -0.123,
+          0.065,
+          1.015
+        ],
+        "scale": [
+          0.031,
+          0.03,
+          0.034
+        ],
+        "euler_xyz_deg": [
+          0,
+          28,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            0.882947592858927,
+            0.0,
+            0.4694715627858908
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.4694715627858908,
+            0.0,
+            0.882947592858927
+          ]
+        ],
+        "color": [
+          0.43,
+          0.245,
+          0.115,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            -0.123,
+            0.065,
+            1.015
+          ],
+          "radii": [
+            0.031,
+            0.03,
+            0.034
+          ],
+          "rotation_matrix": [
+            [
+              0.882947592858927,
+              0.0,
+              0.4694715627858908
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.4694715627858908,
+              0.0,
+              0.882947592858927
+            ]
+          ]
+        }
+      },
+      {
+        "name": "left_upper_arm",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          -0.145,
+          0.055,
+          0.994
+        ],
+        "scale": [
+          0.026,
+          0.028,
+          0.041
+        ],
+        "euler_xyz_deg": [
+          0,
+          32,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            0.848048096156426,
+            0.0,
+            0.5299192642332049
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.5299192642332049,
+            0.0,
+            0.848048096156426
+          ]
+        ],
+        "color": [
+          0.48,
+          0.285,
+          0.145,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            -0.145,
+            0.055,
+            0.994
+          ],
+          "radii": [
+            0.026,
+            0.028,
+            0.041
+          ],
+          "rotation_matrix": [
+            [
+              0.848048096156426,
+              0.0,
+              0.5299192642332049
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.5299192642332049,
+              0.0,
+              0.848048096156426
+            ]
+          ]
+        }
+      },
+      {
+        "name": "left_forearm",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          -0.166,
+          0.042,
+          0.964
+        ],
+        "scale": [
+          0.022,
+          0.026,
+          0.034
+        ],
+        "euler_xyz_deg": [
+          0,
+          16,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            0.9612616959383189,
+            0.0,
+            0.27563735581699916
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.27563735581699916,
+            0.0,
+            0.9612616959383189
+          ]
+        ],
+        "color": [
+          0.48,
+          0.285,
+          0.145,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            -0.166,
+            0.042,
+            0.964
+          ],
+          "radii": [
+            0.022,
+            0.026,
+            0.034
+          ],
+          "rotation_matrix": [
+            [
+              0.9612616959383189,
+              0.0,
+              0.27563735581699916
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.27563735581699916,
+              0.0,
+              0.9612616959383189
+            ]
+          ]
+        }
+      },
+      {
+        "name": "left_paw",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          -0.175,
+          0.035,
+          0.941
+        ],
+        "scale": [
+          0.025,
+          0.027,
+          0.026
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.48,
+          0.285,
+          0.145,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            -0.175,
+            0.035,
+            0.941
+          ],
+          "radii": [
+            0.025,
+            0.027,
+            0.026
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "right_ear",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0.084,
+          0.059,
+          1.166
+        ],
+        "scale": [
+          0.037,
+          0.029,
+          0.039
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.48,
+          0.285,
+          0.145,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0.084,
+            0.059,
+            1.166
+          ],
+          "radii": [
+            0.037,
+            0.029,
+            0.039
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "right_inner_ear",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0.084,
+          0.035,
+          1.166
+        ],
+        "scale": [
+          0.024,
+          0.009,
+          0.025
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.66,
+          0.57,
+          0.38,
+          1.0
+        ],
+        "collision": false,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0.084,
+            0.035,
+            1.166
+          ],
+          "radii": [
+            0.024,
+            0.009,
+            0.025
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "right_foot",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0.059,
+          0.027,
+          0.78
+        ],
+        "scale": [
+          0.047,
+          0.063,
+          0.03
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.48,
+          0.285,
+          0.145,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0.059,
+            0.027,
+            0.78
+          ],
+          "radii": [
+            0.047,
+            0.063,
+            0.03
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "right_shoulder",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0.123,
+          0.065,
+          1.015
+        ],
+        "scale": [
+          0.031,
+          0.03,
+          0.034
+        ],
+        "euler_xyz_deg": [
+          0,
+          -28,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            0.882947592858927,
+            -0.0,
+            -0.4694715627858908
+          ],
+          [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          [
+            0.4694715627858908,
+            0.0,
+            0.882947592858927
+          ]
+        ],
+        "color": [
+          0.43,
+          0.245,
+          0.115,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0.123,
+            0.065,
+            1.015
+          ],
+          "radii": [
+            0.031,
+            0.03,
+            0.034
+          ],
+          "rotation_matrix": [
+            [
+              0.882947592858927,
+              -0.0,
+              -0.4694715627858908
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.4694715627858908,
+              0.0,
+              0.882947592858927
+            ]
+          ]
+        }
+      },
+      {
+        "name": "right_upper_arm",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0.145,
+          0.055,
+          0.994
+        ],
+        "scale": [
+          0.026,
+          0.028,
+          0.041
+        ],
+        "euler_xyz_deg": [
+          0,
+          -32,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            0.848048096156426,
+            -0.0,
+            -0.5299192642332049
+          ],
+          [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          [
+            0.5299192642332049,
+            0.0,
+            0.848048096156426
+          ]
+        ],
+        "color": [
+          0.48,
+          0.285,
+          0.145,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0.145,
+            0.055,
+            0.994
+          ],
+          "radii": [
+            0.026,
+            0.028,
+            0.041
+          ],
+          "rotation_matrix": [
+            [
+              0.848048096156426,
+              -0.0,
+              -0.5299192642332049
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.5299192642332049,
+              0.0,
+              0.848048096156426
+            ]
+          ]
+        }
+      },
+      {
+        "name": "right_forearm",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0.166,
+          0.042,
+          0.964
+        ],
+        "scale": [
+          0.022,
+          0.026,
+          0.034
+        ],
+        "euler_xyz_deg": [
+          0,
+          -16,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            0.9612616959383189,
+            -0.0,
+            -0.27563735581699916
+          ],
+          [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          [
+            0.27563735581699916,
+            0.0,
+            0.9612616959383189
+          ]
+        ],
+        "color": [
+          0.48,
+          0.285,
+          0.145,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0.166,
+            0.042,
+            0.964
+          ],
+          "radii": [
+            0.022,
+            0.026,
+            0.034
+          ],
+          "rotation_matrix": [
+            [
+              0.9612616959383189,
+              -0.0,
+              -0.27563735581699916
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.27563735581699916,
+              0.0,
+              0.9612616959383189
+            ]
+          ]
+        }
+      },
+      {
+        "name": "right_paw",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0.175,
+          0.035,
+          0.941
+        ],
+        "scale": [
+          0.025,
+          0.027,
+          0.026
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.48,
+          0.285,
+          0.145,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0.175,
+            0.035,
+            0.941
+          ],
+          "radii": [
+            0.025,
+            0.027,
+            0.026
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "belly_patch",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0,
+          -0.016,
+          0.929
+        ],
+        "scale": [
+          0.09,
+          0.025,
+          0.111
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.66,
+          0.57,
+          0.38,
+          1.0
+        ],
+        "collision": true,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0,
+            -0.016,
+            0.929
+          ],
+          "radii": [
+            0.09,
+            0.025,
+            0.111
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "muzzle",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0,
+          -0.026,
+          1.068
+        ],
+        "scale": [
+          0.06,
+          0.036,
+          0.038
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.72,
+          0.64,
+          0.46,
+          1.0
+        ],
+        "collision": false,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0,
+            -0.026,
+            1.068
+          ],
+          "radii": [
+            0.06,
+            0.036,
+            0.038
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "left_eye",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          -0.037,
+          -0.03,
+          1.109
+        ],
+        "scale": [
+          0.0076,
+          0.0053,
+          0.009
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.045,
+          0.027,
+          0.016,
+          1.0
+        ],
+        "collision": false,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            -0.037,
+            -0.03,
+            1.109
+          ],
+          "radii": [
+            0.0076,
+            0.0053,
+            0.009
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "left_eye_glint",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          -0.0395,
+          -0.0351,
+          1.112
+        ],
+        "scale": [
+          0.0016,
+          0.0008,
+          0.0017
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.9,
+          0.88,
+          0.79,
+          1
+        ],
+        "collision": false,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            -0.0395,
+            -0.0351,
+            1.112
+          ],
+          "radii": [
+            0.0016,
+            0.0008,
+            0.0017
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "right_eye",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0.037,
+          -0.03,
+          1.109
+        ],
+        "scale": [
+          0.0076,
+          0.0053,
+          0.009
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.045,
+          0.027,
+          0.016,
+          1.0
+        ],
+        "collision": false,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0.037,
+            -0.03,
+            1.109
+          ],
+          "radii": [
+            0.0076,
+            0.0053,
+            0.009
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "right_eye_glint",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0.0365,
+          -0.0351,
+          1.112
+        ],
+        "scale": [
+          0.0016,
+          0.0008,
+          0.0017
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.9,
+          0.88,
+          0.79,
+          1
+        ],
+        "collision": false,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0.0365,
+            -0.0351,
+            1.112
+          ],
+          "radii": [
+            0.0016,
+            0.0008,
+            0.0017
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "nose",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0,
+          -0.061,
+          1.081
+        ],
+        "scale": [
+          0.01,
+          0.005,
+          0.0074
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.045,
+          0.027,
+          0.016,
+          1.0
+        ],
+        "collision": false,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0,
+            -0.061,
+            1.081
+          ],
+          "radii": [
+            0.01,
+            0.005,
+            0.0074
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "mouth_stem",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0,
+          -0.0615,
+          1.069
+        ],
+        "scale": [
+          0.0014,
+          0.0018,
+          0.005
+        ],
+        "euler_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "color": [
+          0.045,
+          0.027,
+          0.016,
+          1.0
+        ],
+        "collision": false,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0,
+            -0.0615,
+            1.069
+          ],
+          "radii": [
+            0.0014,
+            0.0018,
+            0.005
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "mouth_left",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          -0.0051,
+          -0.0608,
+          1.065
+        ],
+        "scale": [
+          0.006,
+          0.0018,
+          0.0015
+        ],
+        "euler_xyz_deg": [
+          0,
+          -15,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            0.9659258262890683,
+            -0.0,
+            -0.25881904510252074
+          ],
+          [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          [
+            0.25881904510252074,
+            0.0,
+            0.9659258262890683
+          ]
+        ],
+        "color": [
+          0.045,
+          0.027,
+          0.016,
+          1.0
+        ],
+        "collision": false,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            -0.0051,
+            -0.0608,
+            1.065
+          ],
+          "radii": [
+            0.006,
+            0.0018,
+            0.0015
+          ],
+          "rotation_matrix": [
+            [
+              0.9659258262890683,
+              -0.0,
+              -0.25881904510252074
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.25881904510252074,
+              0.0,
+              0.9659258262890683
+            ]
+          ]
+        }
+      },
+      {
+        "name": "mouth_right",
+        "mesh": "unit_sphere.obj",
+        "position": [
+          0.0051,
+          -0.0608,
+          1.065
+        ],
+        "scale": [
+          0.006,
+          0.0018,
+          0.0015
+        ],
+        "euler_xyz_deg": [
+          0,
+          15,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            0.9659258262890683,
+            0.0,
+            0.25881904510252074
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.25881904510252074,
+            0.0,
+            0.9659258262890683
+          ]
+        ],
+        "color": [
+          0.045,
+          0.027,
+          0.016,
+          1.0
+        ],
+        "collision": false,
+        "analytic_shape": {
+          "type": "ellipsoid",
+          "center": [
+            0.0051,
+            -0.0608,
+            1.065
+          ],
+          "radii": [
+            0.006,
+            0.0018,
+            0.0015
+          ],
+          "rotation_matrix": [
+            [
+              0.9659258262890683,
+              0.0,
+              0.25881904510252074
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.25881904510252074,
+              0.0,
+              0.9659258262890683
+            ]
+          ]
+        }
+      }
+    ],
+    "arm_centerlines": {
+      "left": [
+        [
+          -0.05633209354523242,
+          0.06771007749816128,
+          0.9689286825312582
+        ],
+        [
+          -0.123,
+          0.065,
+          1.015
+        ],
+        [
+          -0.145,
+          0.055,
+          0.994
+        ],
+        [
+          -0.166,
+          0.042,
+          0.964
+        ],
+        [
+          -0.175,
+          0.035,
+          0.941
+        ],
+        [
+          -0.1858472952853016,
+          0.026563214778098723,
+          0.9132791342708957
+        ]
+      ],
+      "right": [
+        [
+          0.05633209354523242,
+          0.06771007749816128,
+          0.9689286825312582
+        ],
+        [
+          0.123,
+          0.065,
+          1.015
+        ],
+        [
+          0.145,
+          0.055,
+          0.994
+        ],
+        [
+          0.166,
+          0.042,
+          0.964
+        ],
+        [
+          0.175,
+          0.035,
+          0.941
+        ],
+        [
+          0.1858472952853016,
+          0.026563214778098723,
+          0.9132791342708957
+        ]
+      ]
+    },
+    "arm_centerline_method": "Derived from torso/shoulder/upper-arm/forearm/paw components; proximal point inside torso, distal point 5 mm beyond the paw ellipsoid."
+  },
+  "garment": {
+    "mesh": "garment.obj",
+    "simulation_mesh": "garment_sim.obj",
+    "simulation_texture": "garment_texture.png",
+    "vertex_color_mesh": "garment.ply",
+    "topology": "garment_topology.json",
+    "mesh_coordinates": "local",
+    "position": [
+      0,
+      -0.28,
+      0.758
+    ],
+    "euler_xyz_deg": [
+      0,
+      0,
+      0
+    ],
+    "length_m": 0.8,
+    "width_m": 0.18,
+    "visual_thickness_m": 0.0015,
+    "hole_centers_local": [
+      [
+        -0.205,
+        -0.045,
+        0
+      ],
+      [
+        0.205,
+        -0.015,
+        0
+      ]
+    ],
+    "nominal_hole_size_m": [
+      0.066,
+      0.068
+    ],
+    "hole_pattern_inference": "Overhead-image estimates: centers at roughly 24.2% and 75.7% of panel length, and 75.0% and 58.5% of width measured from the far edge. Rounded rectangular openings approximate the irregular visible outlines.",
+    "minimum_nominal_hole_to_hem_margin_m": 0.010999999999999996,
+    "closure_strip_width_m": 0.035,
+    "color": [
+      0.77,
+      0.77,
+      0.66,
+      1.0
+    ],
+    "closure_colors": {
+      "hook_left": [
+        0.055,
+        0.18,
+        0.22,
+        1.0
+      ],
+      "loop_right": [
+        0.42,
+        0.25,
+        0.12,
+        1.0
+      ]
+    },
+    "vertex_count": 2393,
+    "face_count": 4464,
+    "preserve_topology": true,
+    "topology_warning": "Disable automatic filling, convexification, and remeshing that could erase armholes.",
+    "physical_properties": "Set as explicit priors in the simulator, not recovered measurements."
+  },
+  "placement_blocks": [
+    {
+      "name": "front_left_blue",
+      "position": [
+        -0.54,
+        -0.29,
+        0.773
+      ],
+      "size": [
+        0.043,
+        0.043,
+        0.046
+      ],
+      "color": [
+        0.1,
+        0.32,
+        0.64,
+        1
+      ]
+    },
+    {
+      "name": "front_right_red",
+      "position": [
+        0.54,
+        -0.29,
+        0.773
+      ],
+      "size": [
+        0.043,
+        0.043,
+        0.046
+      ],
+      "color": [
+        0.68,
+        0.14,
+        0.11,
+        1
+      ]
+    },
+    {
+      "name": "back_left_green",
+      "position": [
+        -0.28,
+        0.37,
+        0.773
+      ],
+      "size": [
+        0.043,
+        0.043,
+        0.046
+      ],
+      "color": [
+        0.12,
+        0.46,
+        0.3,
+        1
+      ]
+    },
+    {
+      "name": "back_right_yellow",
+      "position": [
+        0.28,
+        0.37,
+        0.773
+      ],
+      "size": [
+        0.043,
+        0.043,
+        0.046
+      ],
+      "color": [
+        0.95,
+        0.61,
+        0.11,
+        1
+      ]
+    }
+  ],
+  "geometric_notes": [
+    "The panel has two actual open boundary loops, not painted sleeve markers.",
+    "Its middle is intended to cover the chest; tails meet behind the teddy.",
+    "Current torso semi-axes 0.132 and 0.100 m give an equatorial circumference of approximately 0.732 m (Ramanujan ellipse approximation); this larger width/depth prior follows the rear-view silhouette ratio and leaves about 0.068 m of a 0.80 m panel for back overlap and closure, rather than identifying true dimensions from the images.",
+    "Armhole centers are staggered by 0.030 m across the panel width and separated by 0.410 m along its length, following the supplied overhead view. Their nominal dimensions are 0.066 by 0.068 m; the left opening leaves an approximately 0.011 m near-edge hem bridge.",
+    "Decorative face and belly meshes are excluded from analytic collision components."
+  ]
+}

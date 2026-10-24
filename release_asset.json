@@ -1,0 +1,9 @@
+{
+  "tag": "v0.1.0",
+  "asset": "trajectory.npz",
+  "destination": "outputs/final/trajectory.npz",
+  "bytes": 63654375,
+  "sha256": "69783e54fd7032cbec03baea81335bc667916a37e4cbbbc0d6aebd2867c1b759",
+  "repository": "Chloe-Jinlei/genesis-teddy-dressing",
+  "release_url": "https://github.com/Chloe-Jinlei/genesis-teddy-dressing/releases/tag/v0.1.0"
+}

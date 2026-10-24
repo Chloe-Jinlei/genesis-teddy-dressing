@@ -1,0 +1,27 @@
+{
+  "observation_inputs": [
+    {
+      "sha256": "f859109d3b09a0908e7333466ab83ee015d4161356fffbadc8bf0b3eb1bdedc6",
+      "filename": "Codex Image Oct 23, 2026, 06_19_27 PM.png"
+    },
+    {
+      "sha256": "844fe87d1c01109d3c9d25a8c8cbbec927aefce6ca6f50467ea747768c783a51",
+      "filename": "Codex Image Oct 23, 2026, 06_19_36 PM.png"
+    },
+    {
+      "sha256": "8afbce31a95fdbeb77ee848c196798437e709c5a6fa5402dbe5ad72914a4b9ee",
+      "filename": "Codex Image Oct 23, 2026, 06_19_49 PM.png"
+    },
+    {
+      "sha256": "6ae5d338c29aeddf70749f90defaf78a7be535fbf8a3d4b6e6c33b08f2ffe611",
+      "filename": "Codex Image Oct 24, 2026, 12_59_25 PM.png"
+    }
+  ],
+  "task": "将衣服包裹熊腹部，两个手臂分别穿出袖口，两端魔术贴黏合。",
+  "original_simulation_read": false,
+  "reused_assets": [
+    "upstream Genesis panda_bullet/panda.urdf and referenced meshes"
+  ],
+  "reconstructed_assets": "All bear and garment geometry procedurally generated from visual interpretation of four initial images.",
+  "identifiability": "Four static uncalibrated views do not uniquely determine metric scale, material parameters, contacts or a successful action sequence."
+}

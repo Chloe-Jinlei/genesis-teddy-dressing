@@ -1,0 +1,16 @@
+{
+  "purpose": "Versions in the environment that produced the recorded demonstration; not an installation lockfile.",
+  "python": "3.12",
+  "packages": {
+    "genesis-world": "1.4.3",
+    "numpy": "2.5.3",
+    "trimesh": "5.1.1",
+    "scipy": "1.18.1",
+    "Pillow": "11.3.0",
+    "imageio": "2.38.0",
+    "imageio-ffmpeg": "0.6.0",
+    "torch": "2.14.0"
+  },
+  "genesis_note": "Installed local Genesis checkout, native PBD private APIs used; verify compatibility before changing versions.",
+  "recorded_device": "cuda:0"
+}
